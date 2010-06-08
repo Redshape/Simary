@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.vio:utils:1.0.0A">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vio/utils/1.0.0A/utils-1.0.0A.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vio/utils/1.0.0A/utils-1.0.0A-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/vio/utils/1.0.0A/utils-1.0.0A-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

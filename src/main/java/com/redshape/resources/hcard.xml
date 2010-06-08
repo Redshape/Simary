@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+        
+<part name="root">
+    <childs>
+        <part name="fn" required="true" singularity="true"/>
+
+        <part name="n" required="true" singularity="true" optimizer="FnToN">
+            <childs>
+                <part name="given-name"/>
+                <part name="family-name"/>
+                <part name="honorific-suffix"/>
+                <part name="honorifix-prefix"/>
+                <part name="additional-name"/>
+            </childs>
+        </part>
+
+        <part name="adr">
+            <childs>
+                <part name="postal-code"/>
+                <part name="region"/>
+                <part name="locality"/>
+                <part name="country-name"/>
+                <part name="street-address"/>
+                <part name="extended-address"/>
+                <part name="post-office-box"/>
+            </childs>
+        </part>
+
+        <part name="agent"/>
+
+        <part name="bday" singularity="true"/>
+
+        <part name="category"/>
+
+        <part name="class" singularity="true"/>
+
+        <part name="email" valueHandler="value">
+            <part name="type"/>
+            <part name="value"/>
+        </part>
+
+        <part name="geo" singular="true">
+            <childs>
+                <part name="latitude"/>
+                <part name="longitude"/>
+            </childs>
+        </part>
+
+        <part name="key"/>
+
+        <part name="logo"/>
+
+        <part name="label"/>
+
+        <part name="mailer"/>
+
+        <part name="nickname" alias="fn"/>
+
+        <part name="note"/>
+
+        <part name="org" valueHandler="organization-name">
+            <childs>
+                <part name="organization-name"/>
+                <part name="organization-unit"/>
+            </childs>
+        </part>
+
+        <part name="photo">
+            <valueHolders>
+                <holder>src</holder>
+                <holder>href</holder>
+                <holder>data</holder>
+            </valueHolders>
+        </part>
+
+        <part name="rev" singularity="true"/>
+
+        <part name="role"/>
+
+        <part name="sort-string" singularity="true"/>
+
+        <part name="sound"/>
+
+        <part name="tel" valueHandler="value">
+            <childs>
+                <part name="type"/>
+                <part name="value"/>
+            </childs>
+        </part>
+
+        <part name="tz" singularity="true"/>
+
+        <part name="uid" singularity="true"/>
+
+        <part name="url">
+            <valueHolders>
+                <holder>href</holder>
+                <holder>src</holder>
+            </valueHolders>
+        </part>
+
+    </childs>
+</part>
